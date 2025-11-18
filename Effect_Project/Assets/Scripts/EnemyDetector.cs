@@ -7,7 +7,7 @@ public class EnemyDetector : MonoBehaviour
     [SerializeField] private float detectionRadius = 10f;
     [SerializeField] private LayerMask enemyLayer;
 
-    public GameObject GetClosestiEnemy()
+    public GameObject GetClosestEnemy()
     {
         Collider[] enemiesInRange = Physics.OverlapSphere(transform.position, detectionRadius, enemyLayer);
 
